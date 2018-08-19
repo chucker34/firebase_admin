@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "migrate": "node ./dist/main.js"
   },
   "dependencies": {
     "firebase-admin": "^6.0.0",
