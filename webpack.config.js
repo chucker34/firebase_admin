@@ -1,3 +1,5 @@
+const Dotenv = require('dotenv-webpack');
+
 module.exports = {
   target: 'node',
   mode: 'development',
@@ -17,5 +19,8 @@ module.exports = {
   resolve: {
     extensions: [ '.ts', '.js', '.json' ],
     mainFields: ['main', 'module']
-  }
+  },
+  plugins: [
+    new Dotenv()
+  ]
 };
